@@ -36,3 +36,12 @@ TextStyle body({Color color = const Color(0xFFCACECA)}){
     color: color
   );
 }
+
+TextStyle bodyBold({Color color = const Color(0xFFCACECA)}){
+  return TextStyle(
+    fontFamily: 'Roboto',
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: color
+  );
+}
