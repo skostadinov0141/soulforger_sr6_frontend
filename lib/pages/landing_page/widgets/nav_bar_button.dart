@@ -7,11 +7,15 @@ class NavBarButton extends StatefulWidget {
   
   String label;
   VoidCallback onClick;
+  bool selected;
+  int id;
 
   NavBarButton({
     super.key,
     this.label = 'PLACEHOLDER',
-    required this.onClick
+    required this.onClick,
+    this.selected = false,
+    required this.id
   });
 
   @override
@@ -19,6 +23,9 @@ class NavBarButton extends StatefulWidget {
 }
 
 class _NavBarButtonState extends State<NavBarButton> {
+
+  bool hovered = false;
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -28,7 +35,7 @@ class _NavBarButtonState extends State<NavBarButton> {
           alignment: Alignment.center,
           child: Text(
             widget.label,
-            style: fonts.body(color: colors.secondary[4]),
+            style: hovered ? fonts.body(color: colors.secondary[0]) : fonts.body(color: colors.secondary[4]),
           ),
         ),
         Positioned.fill(
@@ -36,7 +43,20 @@ class _NavBarButtonState extends State<NavBarButton> {
             alignment: Alignment.bottomCenter,
             child: Container(
               height: 2,
-              color: colors.accents[2],
+              color: widget.selected ? colors.accents[2] : Colors.transparent,
+            ),
+          ),
+        ),
+        Positioned.fill(
+          child: MouseRegion(
+            onEnter: (event) => setState(() {
+              hovered = true;
+            }),
+            onExit: (event) => setState(() {
+              hovered = false;
+            }),
+            child: GestureDetector(
+              onTap: (){widget.onClick();}
             ),
           ),
         )

@@ -32,7 +32,13 @@ class _LandingPageState extends State<LandingPage> {
               )
             ),
             Positioned.fill(
-              child: nav_bar.NavigationBar(child: Container())
+              child: nav_bar.NavigationBar(
+                child: Column(
+                  children: [
+                    Container(height: 500,color: Colors.red,),
+                  ],
+                ),
+              )
             )
           ],
         ),

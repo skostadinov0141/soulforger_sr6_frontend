@@ -43,30 +43,41 @@ class _NavigationBarState extends State<NavigationBar> {
               NavBarButton(
                 onClick: (){},
                 label: 'SPIELEN',
+                id: 0,
+                selected: true,
               ),
               const SizedBox(width: 48,),
               NavBarButton(
                 onClick: (){},
                 label: 'LEITEN',
+                id: 1,
+                selected: false,
               ),
               const SizedBox(width: 48,),
               NavBarButton(
                 onClick: (){},
                 label: 'DATENBANK',
+                id: 2,
+                selected: false,
               ),
               const SizedBox(width: 48,),
               NavBarButton(
                 onClick: (){},
                 label: 'PROFIL',
+                id: 3,
+                selected: false,
               ),
               const SizedBox(width: 48,),
               NavBarButton(
                 onClick: (){},
                 label: 'COMMUNITY HUB',
+                id: 4,
+                selected: false,
               ),
             ],
           )
-        )
+        ),
+        widget.child
       ],
     );
   }
