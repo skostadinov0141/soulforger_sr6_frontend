@@ -42,9 +42,16 @@ class _NavigationBarState extends State<NavigationBar> {
               Expanded(child: Container()),
               NavBarButton(
                 onClick: (){},
-                label: 'SPIELEN',
+                label: 'START',
                 id: 0,
                 selected: true,
+              ),
+              const SizedBox(width: 48,),
+              NavBarButton(
+                onClick: (){},
+                label: 'SPIELEN',
+                id: 0,
+                selected: false,
               ),
               const SizedBox(width: 48,),
               NavBarButton(

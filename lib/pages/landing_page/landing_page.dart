@@ -18,6 +18,7 @@ class _LandingPageState extends State<LandingPage> {
       backgroundColor: colors.primary[2],
       body: SingleChildScrollView(
         child: Stack(
+          clipBehavior: Clip.none,
           children: [
             Positioned(
               child: Container(
@@ -31,14 +32,13 @@ class _LandingPageState extends State<LandingPage> {
                 ),
               )
             ),
-            Positioned.fill(
-              child: nav_bar.NavigationBar(
-                child: Column(
-                  children: [
-                    Container(height: 500,color: Colors.red,),
-                  ],
-                ),
-              )
+            nav_bar.NavigationBar(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Container(height: 5000,color: Colors.white10,),
+                ],
+              ),
             )
           ],
         ),
