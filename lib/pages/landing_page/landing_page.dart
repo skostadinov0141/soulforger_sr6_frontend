@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:frontend_flutter/global_properties/colors.dart' as colors;
 import 'package:frontend_flutter/global_properties/font_styles.dart' as fonts;
 
-import 'package:frontend_flutter/pages/landing_page/widgets/nav_bar.dart' as nav_bar;
+import 'widgets/nav_bar.dart' as nav_bar;
+import 'widgets/hero_section.dart';
+import 'widgets/feature_tracker.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -36,7 +38,24 @@ class _LandingPageState extends State<LandingPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Container(height: 5000,color: Colors.white10,),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 320),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        const SizedBox(height: 200,),
+                        Row(
+                          children: [
+                            Expanded(flex: 5, child: Container(),),
+                            const Expanded(flex: 3, child: HeroSection()),
+                          ],
+                        ),
+                        const SizedBox(height: 640,),
+                        const FeatureTracker(),
+                        const SizedBox(height: 640,),
+                      ],
+                    )
+                  ),
                 ],
               ),
             )
