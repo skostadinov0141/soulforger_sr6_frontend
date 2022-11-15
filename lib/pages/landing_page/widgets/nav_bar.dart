@@ -41,42 +41,54 @@ class _NavigationBarState extends State<NavigationBar> {
               ),
               Expanded(child: Container()),
               NavBarButton(
-                onClick: (){},
+                onClick: (){
+                  Navigator.pushNamed(context, '/');
+                },
                 label: 'START',
                 id: 0,
                 selected: true,
               ),
               const SizedBox(width: 48,),
               NavBarButton(
-                onClick: (){},
+                onClick: (){
+                  Navigator.pushNamed(context, '/not_implemented');
+                },
                 label: 'SPIELEN',
                 id: 0,
                 selected: false,
               ),
               const SizedBox(width: 48,),
               NavBarButton(
-                onClick: (){},
+                onClick: (){
+                  Navigator.pushNamed(context, '/not_implemented');
+                },
                 label: 'LEITEN',
                 id: 1,
                 selected: false,
               ),
               const SizedBox(width: 48,),
               NavBarButton(
-                onClick: (){},
+                onClick: (){
+                  Navigator.pushNamed(context, '/not_implemented');
+                },
                 label: 'DATENBANK',
                 id: 2,
                 selected: false,
               ),
               const SizedBox(width: 48,),
               NavBarButton(
-                onClick: (){},
+                onClick: (){
+                  Navigator.pushNamed(context, '/not_implemented');
+                },
                 label: 'PROFIL',
                 id: 3,
                 selected: false,
               ),
               const SizedBox(width: 48,),
               NavBarButton(
-                onClick: (){},
+                onClick: (){
+                  Navigator.pushNamed(context, '/not_implemented');
+                },
                 label: 'COMMUNITY HUB',
                 id: 4,
                 selected: false,

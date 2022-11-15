@@ -16,14 +16,14 @@ class FeatureTrackerFeatureElement extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8),
+      padding: const EdgeInsets.symmetric(vertical: 16),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Icon(
             completed ? Icons.check_circle_outline_rounded : Icons.circle_outlined,
             size: 40,
-            color: colors.primary[0],
+            color: completed ? colors.accents[1] : colors.primary[0],
           ),
           const SizedBox(width: 16,),
           Text(

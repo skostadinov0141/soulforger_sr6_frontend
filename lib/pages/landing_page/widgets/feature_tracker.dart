@@ -26,14 +26,28 @@ class FeatureTracker extends StatelessWidget {
                   "Feature-Tracker",
                   style: fonts.h2(color: colors.secondary[2]),
                 ),
+                const SizedBox(height: 16,),
+                Text(
+                  "Alle in Arbeit befindlichen Funktionen werden hier aufgelistet. Ziel ist es, alle aufgeführten Funktionen bis zum Ende des jeweiligen Quartals fertigzustellen. Da nur ein einziger Entwickler an dem Projekt arbeitet, können sich einige Funktionen verzögern oder ganz ausfallen.",
+                  style: fonts.body(color: colors.secondary[4]),
+                ),
                 const SizedBox(height: 32,),
-                FeatureTrackerFeatureElement(completed: true,),
+                FeatureTrackerFeatureElement(
+                  content: "Die Veröffentlichung der Landing-Page. (Q4 2022)",
+                  completed: true,
+                ),
                 Container(height: 1, color: colors.primary[1],),
-                FeatureTrackerFeatureElement(),
+                FeatureTrackerFeatureElement(
+                  content: "Die Kontoerstellung ist für jeden mit einem Beta-Tester-Code eröffnet. (Q1 2023)",
+                ),
                 Container(height: 1, color: colors.primary[1],),
-                FeatureTrackerFeatureElement(),
+                FeatureTrackerFeatureElement(
+                  content: "Das experimentelle Release der Datenbank. (Q1 2023)",
+                ),
                 Container(height: 1, color: colors.primary[1],),
-                FeatureTrackerFeatureElement(),
+                FeatureTrackerFeatureElement(
+                  content: "Die Datenbank ist in Bezug auf das Grundregelwerk auf dem neuesten Stand. (Q1 2023)",
+                ),
               ],
             ),
           ),

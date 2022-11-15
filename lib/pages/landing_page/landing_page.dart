@@ -52,7 +52,7 @@ class _LandingPageState extends State<LandingPage> {
                         ),
                         const SizedBox(height: 640,),
                         const FeatureTracker(),
-                        const SizedBox(height: 640,),
+                        const SizedBox(height: 200,),
                       ],
                     )
                   ),
