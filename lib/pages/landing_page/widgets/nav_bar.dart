@@ -46,7 +46,7 @@ class _NavigationBarState extends State<NavigationBar> {
                 },
                 label: 'START',
                 id: 0,
-                selected: true,
+                selected: (ModalRoute.of(context)?.settings.name == '/') ? true : false,
               ),
               const SizedBox(width: 48,),
               NavBarButton(
@@ -92,6 +92,15 @@ class _NavigationBarState extends State<NavigationBar> {
                 label: 'COMMUNITY HUB',
                 id: 4,
                 selected: false,
+              ),
+              const SizedBox(width: 48,),
+              NavBarButton(
+                onClick: (){
+                  Navigator.pushNamed(context, '/contact');
+                },
+                label: 'IMPRESSUM',
+                id: 4,
+                selected: (ModalRoute.of(context)?.settings.name == '/contact') ? true : false,
               ),
             ],
           )

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend_flutter/pages/contact_page/contact_page.dart';
 
 import 'package:frontend_flutter/pages/landing_page/landing_page.dart';
 
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         '/':(context) => const LandingPage(),
-        '/not_implemented':(context) => const NotImplementedPage()
+        '/not_implemented':(context) => const NotImplementedPage(),
+        '/contact':(context) => const ContactPage(),
       },
       title: 'Flutter Demo',
     );
