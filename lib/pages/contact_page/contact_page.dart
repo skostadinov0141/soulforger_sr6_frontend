@@ -54,7 +54,7 @@ class ContactPage extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Email:",
+                                "E-Mail:",
                                 style: fonts.bodyBold(),
                               ),
                               Text(
@@ -72,7 +72,7 @@ class ContactPage extends StatelessWidget {
                                 style: fonts.body(),
                               ),
                               SelectableText(
-                                "0176 63213726",
+                                "+49 176 63213726",
                                 style: fonts.body(),
                               ),
                             ],
