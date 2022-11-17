@@ -32,13 +32,25 @@ class _NavigationBarState extends State<NavigationBar> {
               Container(
                 width: 70, 
                 height: 70, 
-                color: Colors.white10,
+                decoration: BoxDecoration(
+                  //color: Colors.red,
+                  image: DecorationImage(
+                    colorFilter: ColorFilter.mode(
+                      colors.secondary[2],
+                      BlendMode.srcATop
+                    ),
+                    isAntiAlias: true,
+                    image: Image.asset(
+                      'assets\\images\\soulforger_logo_100p.png',  
+                    ).image
+                  )
+                ),
               ),
-              const SizedBox(width: 16,),
-              Text(
+              const SizedBox(width: 0,),
+              /* Text(
                 'SOULFORGER',
                 style: fonts.h3(color: colors.secondary[2]),
-              ),
+              ), */
               Expanded(child: Container()),
               NavBarButton(
                 onClick: (){
