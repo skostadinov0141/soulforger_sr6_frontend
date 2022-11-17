@@ -41,7 +41,7 @@ class _NavigationBarState extends State<NavigationBar> {
                     ),
                     isAntiAlias: true,
                     image: Image.asset(
-                      'assets\\images\\soulforger_logo_100p.png',  
+                      'assets/images/soulforger_logo_100p.png',  
                     ).image
                   )
                 ),

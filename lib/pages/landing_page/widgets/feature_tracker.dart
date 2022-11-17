@@ -14,7 +14,7 @@ class FeatureTracker extends StatelessWidget {
       child: Row(
         children: [
           Image.asset(
-            "assets\\images\\feature_tracker_image_1.jpg",
+            "assets/images/feature_tracker_image_1.jpg",
             fit: BoxFit.fitHeight,
           ),
           const SizedBox(width: 64,),

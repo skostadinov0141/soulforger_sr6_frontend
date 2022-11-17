@@ -79,10 +79,7 @@ flutter:
           weight: 900
 
   assets:
-    - assets\images\landing_page_backgound.jpg
-    - assets\images\feature_tracker_image_1.jpg
-    - assets\images\soulforger_logo_100p.png
-    - assets\images\soulforger_logo_2000p.png
+    - assets/images/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

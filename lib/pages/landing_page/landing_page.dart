@@ -33,7 +33,7 @@ class _LandingPageState extends State<LandingPage> {
                         image: DecorationImage(
                           alignment: Alignment.topCenter,
                           fit: BoxFit.fitWidth,
-                          image: Image.asset('assets\\images\\landing_page_backgound.jpg').image
+                          image: Image.asset("assets/images/landing_page_backgound.jpg").image
                         )
                       ),
                     )
