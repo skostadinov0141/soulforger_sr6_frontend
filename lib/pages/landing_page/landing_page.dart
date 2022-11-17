@@ -19,7 +19,7 @@ class _LandingPageState extends State<LandingPage> {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if(constraints.maxWidth >= 1800){
+        if(constraints.maxWidth >= 1500){
           return Scaffold(
             backgroundColor: colors.primary[2],
             body: SingleChildScrollView(
