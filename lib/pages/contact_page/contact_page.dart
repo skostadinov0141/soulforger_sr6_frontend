@@ -67,11 +67,11 @@ class ContactPage extends StatelessWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              SelectableText(
                                 "soulforger.net@gmail.com",
                                 style: fonts.body(),
                               ),
-                              Text(
+                              SelectableText(
                                 "0176 63213726",
                                 style: fonts.body(),
                               ),
