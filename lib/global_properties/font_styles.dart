@@ -1,4 +1,4 @@
-library frontend_flutter.fonts;
+library Soulforger.net.fonts;
 import 'package:flutter/material.dart';
 
 TextStyle h1({Color color = const Color(0xFFCACECA)}){

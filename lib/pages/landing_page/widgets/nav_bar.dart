@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:frontend_flutter/pages/landing_page/widgets/nav_bar_button.dart';
+import 'package:Soulforger.net/pages/landing_page/widgets/nav_bar_button.dart';
 
-import 'package:frontend_flutter/global_properties/colors.dart' as colors;
-import 'package:frontend_flutter/global_properties/font_styles.dart' as fonts;
+import 'package:Soulforger.net/global_properties/colors.dart' as colors;
+import 'package:Soulforger.net/global_properties/font_styles.dart' as fonts;
 
 class NavigationBar extends StatefulWidget {
 

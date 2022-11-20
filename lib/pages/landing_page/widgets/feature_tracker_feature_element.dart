@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:frontend_flutter/global_properties/colors.dart' as colors;
-import 'package:frontend_flutter/global_properties/font_styles.dart' as fonts;
+import 'package:Soulforger.net/global_properties/colors.dart' as colors;
+import 'package:Soulforger.net/global_properties/font_styles.dart' as fonts;
 
 class FeatureTrackerFeatureElement extends StatelessWidget {
 

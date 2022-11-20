@@ -1,4 +1,4 @@
-library frontend_flutter.colors;
+library Soulforger.net.colors;
 import 'package:flutter/material.dart';
 
 List<Color> primary = const [

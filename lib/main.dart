@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
-import 'package:frontend_flutter/pages/contact_page/contact_page.dart';
+import 'package:Soulforger.net/pages/contact_page/contact_page.dart';
 
-import 'package:frontend_flutter/pages/landing_page/landing_page.dart';
+import 'package:Soulforger.net/pages/landing_page/landing_page.dart';
 
-import 'package:frontend_flutter/global_properties/colors.dart' as colors;
-import 'package:frontend_flutter/global_properties/font_styles.dart' as fonts;
-import 'package:frontend_flutter/pages/not_implemented_page/not_implemented_page.dart';
+import 'package:Soulforger.net/global_properties/colors.dart' as colors;
+import 'package:Soulforger.net/global_properties/font_styles.dart' as fonts;
+import 'package:Soulforger.net/pages/not_implemented_page/not_implemented_page.dart';
 
 void main() {
   runApp(const MyApp());
