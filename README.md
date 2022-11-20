@@ -1,6 +1,6 @@
 # Soulforger.net
 
-A new Flutter project.
+Die Zukunft von Shadowrun.
 
 ## Getting Started
 
