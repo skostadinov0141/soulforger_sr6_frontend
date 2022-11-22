@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:Soulforger.net/global_properties/colors.dart' as colors;
 import 'package:Soulforger.net/global_properties/font_styles.dart' as fonts;
 
-import '../mobile/mobile_blocker_page.dart';
+import '../mobile/mobile_landing_page.dart';
 import 'widgets/nav_bar.dart' as nav_bar;
 import 'widgets/hero_section.dart';
 import 'widgets/feature_tracker.dart';
@@ -68,7 +68,7 @@ class _LandingPageState extends State<LandingPage> {
             ),
           );
         }else{
-          return MobileBlockerPage();
+          return MobileLandingPage();
         }
       },
     );
