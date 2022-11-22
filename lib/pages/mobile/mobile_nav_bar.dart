@@ -43,12 +43,7 @@ class _MobileNavBarState extends State<MobileNavBar> {
                 }
               ),
               Expanded(
-                child: Center(
-                  child: Text(
-                    "SOULFORGER",
-                    style: fonts.h2(),
-                  ),
-                ),
+                child: Container()
               ),
               Image.asset(
                 'assets/images/soulforger_logo_100p.png',
@@ -92,7 +87,7 @@ class _MobileNavBarDrawerState extends State<MobileNavBarDrawer> {
             ),
           ),
           ListTile(
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 20),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
             textColor: colors.secondary[2],
             title: Text(
               "SPIELEN",
@@ -101,7 +96,7 @@ class _MobileNavBarDrawerState extends State<MobileNavBarDrawer> {
             onTap: () {},
           ),
           ListTile(
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 20),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
             textColor: colors.secondary[2],
             title: Text(
               "LEITEN",
@@ -110,7 +105,7 @@ class _MobileNavBarDrawerState extends State<MobileNavBarDrawer> {
             onTap: () {},
           ),
           ListTile(
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 20),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
             textColor: colors.secondary[2],
             title: Text(
               "DATENBANK",
@@ -119,7 +114,7 @@ class _MobileNavBarDrawerState extends State<MobileNavBarDrawer> {
             onTap: () {},
           ),
           ListTile(
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 20),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
             textColor: colors.secondary[2],
             title: Text(
               "PROFIL",
@@ -128,7 +123,7 @@ class _MobileNavBarDrawerState extends State<MobileNavBarDrawer> {
             onTap: () {},
           ),
           ListTile(
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 20),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
             textColor: colors.secondary[2],
             title: Text(
               "COMMUNITY HUB",
@@ -137,7 +132,7 @@ class _MobileNavBarDrawerState extends State<MobileNavBarDrawer> {
             onTap: () {},
           ),
           ListTile(
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 20),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
             textColor: colors.secondary[2],
             title: Text(
               "IMPRESSUM",
