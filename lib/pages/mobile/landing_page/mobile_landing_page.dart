@@ -1,4 +1,4 @@
-import 'package:Soulforger.net/pages/mobile/mobile_nav_bar.dart';
+import 'package:Soulforger.net/pages/mobile/landing_page/widgets/mobile_nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:Soulforger.net/global_properties/colors.dart' as colors;
 import 'package:Soulforger.net/global_properties/font_styles.dart' as fonts;
@@ -29,7 +29,26 @@ class _MobileBlockerPageState extends State<MobileLandingPage> {
                 alignment: Alignment.topLeft,
               ),
             ),
-            const MobileNavBar(),
+            MobileNavBar(
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.08),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Text(
+                      "Digital, Zentralisiert, Community Driven...",
+                      textAlign: TextAlign.center,
+                      style: fonts.h1(),
+                    ),
+                    Text(
+                      "Soulforger\n",
+                      textAlign: TextAlign.center,
+                      style: fonts.h1(color: colors.accents[0]),
+                    )
+                  ],
+                )
+              )
+            ),
           ],
         ),
       )
