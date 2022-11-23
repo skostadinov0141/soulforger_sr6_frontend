@@ -90,89 +90,93 @@ class MobileNavBarDrawer extends StatefulWidget {
 class _MobileNavBarDrawerState extends State<MobileNavBarDrawer> {
   @override
   Widget build(BuildContext context) {
-    return BackdropFilter(
-      filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-      child: ListView(
-        children: [
-          ListTile(
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 20),
-            title: Text(
-              "NAVIGATION",
-              style: fonts.h2(color:colors.secondary[0]),
+    return Container(
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height,
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+        child: ListView(
+          children: [
+            ListTile(
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 20),
+              title: Text(
+                "NAVIGATION",
+                style: fonts.h2(color:colors.secondary[0]),
+              ),
             ),
-          ),
-          ListTile(
-            selected: true,
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
-            title: Text(
-              "START",
-              style: fonts.h3(color:colors.secondary[4]),
+            ListTile(
+              selected: true,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
+              title: Text(
+                "START",
+                style: fonts.h3(color:colors.secondary[4]),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
-            title: Text(
-              "SPIELEN",
-              style: fonts.h3(color:colors.secondary[4]),
+            ListTile(
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
+              title: Text(
+                "SPIELEN",
+                style: fonts.h3(color:colors.secondary[4]),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
-            title: Text(
-              "LEITEN",
-              style: fonts.h3(color:colors.secondary[4]),
+            ListTile(
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
+              title: Text(
+                "LEITEN",
+                style: fonts.h3(color:colors.secondary[4]),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
-            title: Text(
-              "DATENBANK",
-              style: fonts.h3(color:colors.secondary[4]),
+            ListTile(
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
+              title: Text(
+                "DATENBANK",
+                style: fonts.h3(color:colors.secondary[4]),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
-            title: Text(
-              "PROFIL",
-              style: fonts.h3(color:colors.secondary[4]),
+            ListTile(
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
+              title: Text(
+                "PROFIL",
+                style: fonts.h3(color:colors.secondary[4]),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
-            title: Text(
-              "COMMUNITY HUB",
-              style: fonts.h3(color:colors.secondary[4]),
+            ListTile(
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
+              title: Text(
+                "COMMUNITY HUB",
+                style: fonts.h3(color:colors.secondary[4]),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
-            title: Text(
-              "IMPRESSUM",
-              style: fonts.h3(color:colors.secondary[4]),
+            ListTile(
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16,vertical: 10),
+              title: Text(
+                "IMPRESSUM",
+                style: fonts.h3(color:colors.secondary[4]),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
